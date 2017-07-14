@@ -1,0 +1,18 @@
+<div>  
+  My favorite color is:
+  <select [(ngModel)]="color">
+    <option *ngFor="let c of colors" [value]="c">{{c}}</option>
+  </select>
+
+  <div [ngSwitch]="color">
+      <div *ngSwitchCase="'red'">Red Option</div>
+      <div *ngSwitchCase="'blue'">Blue Option</div>
+      <div *ngSwitchDefault>Default Option</div>
+  </div>
+  
+  <hr>
+    
+  <div>
+    <li *ngFor="let w of words" appDeleteListItem>{{w | titleCase}}</li>
+  </div>
+</div>
