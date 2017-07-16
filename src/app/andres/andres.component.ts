@@ -7,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AndresComponent implements OnInit {
   colors:string[] = ['red', 'blue', 'yellow'];
-  words:string[] = ['algo algo', 'oto oto']
+  words:string[] = ['algo algo', 'oto oto', 'ABCD EFG'];
+  color:string = '';
   constructor() { }
 
   ngOnInit() {
